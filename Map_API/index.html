@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- print title -->
+    <title>Distances Between Two Places App</title>
+    <meta name="viewport" content="width=device-width,initial-scale-1">
+    <!-- include bootstrap files and all nesesery links -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" herf="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet"/>
+<link herf="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1> Find location for any City and the Distance Between Two Places</h1>
+            <p>This App Will help You to see the location of any city and Calculate Your Travelling Distance</p>
+            <form class="form-horizantal">
+                <!-- input for city -->
+                <div class="form-group input-icons">
+                <i class="fas fa-map-marked-alt icon"></i>   
+                <input type="text" name="maddress" id="from" class="form-control input-field"  required="required" size="100" autocomplete="on" runat="server" />
+                </div>
+                
+                    <!-- input for destenation -->
+                  <div class="form-group input-icons">
+                    <i class="fas fa-map-marked-alt icon"></i>
+                    <input id="to" type="text/javascript" class="form-control input-field"  placeholder="Destination(Optional)">
+                  </div>      
+            </form>
+                <!-- Button to do the action to new map result -->
+            <div>
+                
+                
+                <button onclick="locat()" type="button" class="btn btn-info">Search City</button>
+                
+                <button onclick="calcRoute()" type="button" class="btn btn-info">Distance</button>
+            </div>
+
+            <div class="container-fluid">
+                <!-- gave output and googleMap id -->
+                <div id="googleMap"></div>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    <!-- google maps link-->
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBsNruszdcC7GPJ4tH4AFrVzOTnrs-qVjY&callback=initMap"></script>
+    <!-- js file link-->
+    <script src="app.js"></script>
+    
+</body>
+</html>
+

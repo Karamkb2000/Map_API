@@ -1,0 +1,71 @@
+/* css file to implement the style */
+body{
+    background-color: 	#ffffff;
+    color:#020e11;
+    font-family: "Poppins",sans-serif;
+}
+
+
+h1 {
+    
+    color: rgb(218, 157, 14);
+  }
+
+.jumbotron{
+    background-color: transparent ;
+    margin: 0;
+    padding: 10px;
+}
+
+.jumbotron h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.jumbotron h1,
+.jumbotron p{
+    
+    text-align: center;
+}
+
+.jumbotron p{
+    font-size: 1em;
+}
+/* to print the map in right way */
+#googleMap {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+
+}
+/* to print output for destination details */
+#output {
+    
+    text-align: center;
+    font-size: 2em;
+    margin: 20px;
+}
+
+.input-field {
+    width: 100%;
+    text-indent: 5%;
+}
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
